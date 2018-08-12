@@ -1,0 +1,11 @@
+{
+  "pagesList": [
+    {
+      "list": [
+        { "href": "main.html", "content": "Главная страница" }
+      ]
+    }
+  ],
+
+  "jsv": "javascript:void(0);"
+}

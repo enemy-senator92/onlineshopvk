@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const src = {root: path.resolve(__dirname, 'src/')};
 Object.assign(src, {
@@ -179,6 +180,13 @@ const config = {
   },
 
   plugins: [
+    new CopyWebpackPlugin([
+      {
+        context: src.root,
+        from: path.resolve(src.img, '**/*'),
+        to: dist.root
+      }
+    ]),
     new ExtractTextPlugin({
       filename: './css/app.css'
     }),
