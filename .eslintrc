@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "comma-dangle": "off",
+    "global-require": "off",
+    "default-case": "off",
+    "prefer-destructuring": "off",
+    "no-return-assign": "off",
+    "linebreak-style": 0,
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-dynamic-require": "off"
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "globals": {
+    "$": true,
+    "jQuery": true,
+    "ymaps": true
+  }
+}

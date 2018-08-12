@@ -1,0 +1,14 @@
+{
+  "fileExtensions": [".less"],
+  "zeroUnit": {
+    "style": "no_unit"
+  },
+  "propertyOrdering": false,
+  "decimalZero": "none",
+  "qualifyingElement": {
+    "allowWithAttribute": true,
+    "allowWithClass": true,
+    "allowWithId": true
+  },
+  "universalSelector": false
+}
