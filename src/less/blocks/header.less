@@ -19,7 +19,7 @@
     overflow: hidden;
     position: relative;
     height: 62px;
-    border: none;
+    border: 0;
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
@@ -33,22 +33,11 @@
   }
 
   &__menu {
-    display: block;
-    text-decoration: none;
+    .button;
     margin: 12px 7px;
     text-align: center;
     min-width: 35px;
-    background-color: #e5ebf1;
-    color: #55677d;
-    font-size: 15px;
-    letter-spacing: 0.16px;
     width: 50%;
-    height: 38px;
-    line-height: 38px;
-    font-weight: 500;
-    border-radius: 6px;
-    cursor: pointer;
-    border: 0;
 
     @media @mobile {
       padding-left: 15px;
@@ -62,21 +51,10 @@
   }
 
   &__cart {
-    display: block;
-    text-decoration: none;
+    .button;
     margin: 12px 7px;
-    text-align: center;
     min-width: 35px;
-    background-color: #e5ebf1;
-    color: #55677d;
-    font-weight: 500;
-    font-size: 15px;
-    letter-spacing: 0.16px;
     width: 50%;
-    height: 38px;
-    line-height: 38px;
-    border-radius: 6px;
-    cursor: pointer;
 
     @media @mobile {
       padding-left: 15px;
@@ -90,7 +68,7 @@
   }
 
   &__nav {
-    color: #000;
+    color: #000000;
     text-align: center;
     position: absolute;
     top: -9999px;
@@ -98,7 +76,7 @@
     right: 9999px;
     opacity: 0;
     z-index: 500;
-    background: #fff;
+    background: #ffffff;
     margin: -11px 0 0;
     transform: translateX(100%);
     transition: @A opacity, @A transform;
@@ -119,6 +97,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, .5);
   }
 }

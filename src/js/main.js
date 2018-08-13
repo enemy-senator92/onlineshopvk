@@ -7,4 +7,3 @@ $(() => {
   init('.js-menu', Menu, 'widget', 'Menu');
   init('.js-burger', Burger, 'widget', 'Burger');
 });
-

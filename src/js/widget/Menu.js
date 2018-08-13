@@ -6,7 +6,6 @@ export default class {
       const $parent = $(e.currentTarget).closest(`.js-menu-parent[data-level=${level}]`);
       const $category = $parent.find(`.js-menu-category[data-level=${level}]`);
 
-      console.log($category);
       if (!$(e.currentTarget).hasClass('_open')) {
         $(e.currentTarget).addClass('_open');
         $category.addClass('_open');
