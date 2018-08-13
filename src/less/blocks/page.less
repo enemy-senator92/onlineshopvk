@@ -29,10 +29,14 @@
   }
 
   &__main {
-    padding-top: 102px;
+    padding-top: 159px;
     margin-top: 0;
     position: relative;
     z-index: 9;
+
+    @media @mobile {
+      padding-top: 102px;
+    }
   }
 
   &__ovrlay {
@@ -41,7 +45,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 1;
+    z-index: 9;
     background: #000000;
     opacity: 0;
     visibility: hidden;

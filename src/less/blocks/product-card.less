@@ -1,0 +1,90 @@
+.product-card {
+  &__content {
+    overflow: hidden;
+  }
+
+  &__images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__more {
+    display: none;
+    padding-top: 12px;
+  }
+
+  &__body {
+    height: 1%;
+    overflow: hidden;
+    text-align: left;
+    margin: 7px 0;
+    font-size: 12.5px;
+    line-height: 1.154;
+  }
+
+  &__name {
+    .a-reset;
+    display: block;
+    color: #787878;
+    line-height: 120%;
+    max-height: 2.4em;
+    overflow: hidden;
+  }
+
+  &__price {
+    .fonts;
+    display: block;
+    margin: 0;
+    color: #000000;
+    font-weight: 700;
+    padding-top: 4px;
+
+    @media @mobile {
+      padding-top: 5px;
+    }
+  }
+
+  &__price-percent {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 5px;
+  }
+
+
+
+  // hover mod
+  &._hover &__content {
+    position: absolute;
+    left: -8px;
+    right: -8px;
+    top: -8px;
+    padding: 14px 14px 7px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  &._hover &__more {
+    display: block;
+  }
+
+
+
+  // old price mod
+  &__price._old &__price-text {
+    text-decoration: line-through;
+    color: #787878;
+    font-weight: 400;
+  }
+}

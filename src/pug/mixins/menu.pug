@@ -1,0 +1,15 @@
+mixin menu
+  ul.menu.js-menu
+    each current in new Array(2)
+      li.menu__item._current.js-menu-parent(data-level='1')
+        .menu__item-button.js-menu-button(data-level='1' role='button') Женская коллекция
+        ul.menu__item-menu.js-menu-category(data-level='1')
+          each second in new Array(2)
+            li.menu__item._second.js-menu-parent(data-level='2')
+              .menu__item-button.js-menu-button(data-level='2' role='button') Одежда
+              ul.menu__item-menu.js-menu-category(data-level='2')
+                each item in new Array(6)
+                  li.menu__item
+                    a.menu__item-link(href=$.jsv) Джинсы
+    li.menu__item._personal
+      a.menu__item-link(href=$.jsv) Личный кабинет

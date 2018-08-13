@@ -1,3 +1,5 @@
+include /mixins/menu
+
 header.header
   .header__container
     .header__logo
@@ -6,19 +8,11 @@ header.header
     .header__content
       .header__btns
         button.header__menu.js-burger(type='button') Меню
-        a.header__cart(href=$.jsv) В корзине #[strong 1] товар на #[strong 5 109] руб
-    nav.header__nav.js-burger-nav
-      ul.menu.js-menu
-        each current in new Array(2)
-          li.menu__item._current.js-menu-parent(data-level='1')
-            .menu__item-button.js-menu-button(data-level='1' role='button') Женская коллекция
-            ul.menu__item-menu.js-menu-category(data-level='1')
-              each second in new Array(2)
-                li.menu__item._second.js-menu-parent(data-level='2')
-                  .menu__item-button.js-menu-button(data-level='2' role='button') Одежда
-                  ul.menu__item-menu.js-menu-category(data-level='2')
-                    each item in new Array(6)
-                      li.menu__item
-                        a.menu__item-link(href=$.jsv) Джинсы
-        li.menu__item._personal
-          a.menu__item-link(href=$.jsv) Личный кабинет
+        .header__other-btn
+          a.header__back(href=$.jsv)
+            span.header__desktop Назад в каталог
+            span.header__mobile Назад
+          a.header__cart(href=$.jsv)
+            span.header__desktop В корзине #[strong 1] товар на #[strong 5 109] руб
+            span.header__mobile Корзина (#[strong 1])
+    nav.header__nav.js-burger-nav: +menu
