@@ -5,8 +5,10 @@ block variables
 doctype html
 html.page(lang='ru')
   include /includes/head
-  body.page__body
-    .page__header
-      include /includes/header
-    .page__main
-      block main
+  body.page__body.js-body
+    .page__wrapper
+      .page__header
+        include /includes/header
+      .page__main
+        block main
+      .page__ovrlay.js-overlay

@@ -10,4 +10,46 @@
     position: relative;
     font-size: 12px;
   }
+
+  &__wrapper {
+    min-height: 100vh;
+    width: 1000px;
+    position: relative;
+    max-width: 100vw;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  &__main {
+    padding-top: 102px;
+    margin-top: 0;
+    position: relative;
+    z-index: 9;
+  }
+
+  &__ovrlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: #000000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s ease;
+
+    &._visible {
+      opacity: 0.5;
+      visibility: visible;
+    }
+  }
 }

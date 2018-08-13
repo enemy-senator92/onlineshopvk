@@ -154,29 +154,7 @@ const config = {
   },
 
   optimization: {
-    minimize: true,
-    runtimeChunk: {name: 'common'},
-    splitChunks: {
-      cacheGroups: {
-        default: {
-          minChunks: 2,
-          priority: -20,
-          reuseExistingChunk: true,
-        },
-        commons: {
-          test: /\.js?$/,
-          chunks: 'all',
-          minChunks: 2,
-          name: 'common',
-          enforce: true,
-        },
-        vendors: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendors',
-          chunks: 'all'
-        }
-      },
-    },
+    minimize: true
   },
 
   plugins: [
