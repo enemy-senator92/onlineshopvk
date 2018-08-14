@@ -1,0 +1,39 @@
+.collapse-panel {
+  &__panel {
+    overflow: hidden;
+    position: relative;
+    transition: @A height;
+
+    &._hide {
+      &:after {
+        content: '';
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+      }
+    }
+  }
+
+  &__more {
+    margin-top: 8px;
+
+    &._hidden {
+      display: none;
+    }
+  }
+
+  &__more-link {
+    .button-reset;
+    color: #55677d;
+    font-size: 12px;
+    border-bottom: 1px dashed currentColor;
+    transition: @A color;
+
+    &:hover {
+      color: #5181b8;
+    }
+  }
+}

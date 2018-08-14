@@ -2,7 +2,8 @@
   "pagesList": [
     {
       "list": [
-        { "href": "main.html", "content": "Главная страница" }
+        { "href": "main.html", "content": "Главная страница" },
+        { "href": "item.html", "content": "Страница товара" }
       ]
     }
   ],

@@ -1,0 +1,66 @@
+extends /includes/layout
+
+include /mixins/button
+
+block variables
+  - const title = 'Страница товара'
+
+block main
+
+  main.main
+    .main__catalog
+      .item-page
+        .item-page__conteiner
+          .item-page__image
+            .cover
+              .cover__slider.js-slider(data-slider-for='.thumbnails__slider' data-slider-type='cover')
+                each cover in new Array(3)
+                  .cover__slide.js-slider-slide: .cover__slide-box
+                    img.cover__img(src='http://via.placeholder.com/329x515/')
+          .item-page__body
+            .item-page__box
+              p.item-page__name #Зановородиться. Невероятная история любви
+            .item-page__box
+              p.item-page__price
+                span.item-page__price-text 99 999 руб
+              p.item-page__price._old
+                span.item-page__price-text 99 999 руб
+                span.item-page__price-percent 30%
+            .item-page__box: .item-page__chars
+              .item-page__char
+                .item-page__char-name Автор:
+                .item-page__char-value Петров Александр Андреевич
+              .item-page__char
+                .item-page__char-name Жанр:
+                .item-page__char-value Биографии. Мемуары
+              .item-page__char
+                .item-page__char-name Издательство:
+                .item-page__char-value Издательство "Эксмо" ООО
+              .item-page__char
+                .item-page__char-name ISBN:
+                .item-page__char-value 978-5-04-090986-5
+              .item-page__char
+                .item-page__char-name Возрастное ограничение:
+                .item-page__char-value 16+
+              .item-page__char
+                .item-page__char-name Год издания:
+                .item-page__char-value 2018
+            .item-page__box
+              .collapse-panel.js-collapse(
+              data-collapse-height='162'
+              data-collapse-text='Скрыть описание'
+              data-collapse-scroll='.js-about'
+              )
+                .collapse-panel__panel.js-collapse-panel
+                  .collapse-panel__text.js-collapse-text
+                    .item-page__about Об авторе: Саша Петров – известный актер театра и кино. С 2013 года служит в труппе театра им. Ермоловой под руководством Олега Меньшикова. Он успел сняться в главных ролях: блокбастер «Притяжение», киносериал «Гоголь», сериалы «Полицейский с Рублевки», «Метод», «Фарца» и других масштабных проектах российского кино.<br><br>О книге: Это абсолютно честный разговор актера с самим собой и с читателем о любви, о жизни, о мгновениях счастья, о страхе одиночества, об отношениях с любимой, о таланте и поиске своего места и предназначения, о вдохновении, музыке и ярких эмоциях. Здесь опубликованы монологи и очень личные тексты из авторского драматического шоу #ЗАНОВОРОДИТЬСЯ, где Саша Петров и актер, и сценарист, и режиссер. В книге история любви с музой и актрисой Ириной Старшенбаум, стихи, написанные в разные годы, и мысли, которые на бумаге приобрели новый смысл. #ЗАНОВОРОДИТЬСЯ первая и откровенная книга актера Саши Петрова.<br><br>Особенности: #ЗАНОВОРОДИТЬСЯ - это авторский спектакль актера, который совмещает в себе театр, кино, музыку и поэзию. Постановка успела покорить клубные площадки Москвы, Санкт-Петербурга, Воронежа и Екатеринбурга, музыкальный фестиваль «Нашествие» и московский театр имени М.Н. Ермоловой, а теперь получила второе рождение на страницах издания. Многочисленные фотографии из личного архива Саши Петрова и Ирины Старшенбаум добавляют уникальности этому изданию. <br><br>Цитата: «Это удивительно, просто думать об этом, что весь наш мир соткан из таких мгновений, которые являются самыми главными в жизни, моменты ухода от реальности и погружения в невиданную силу, которую люди привыкли называть – любовь».<br><br>Стихотворение:<br>Я ТАКОЙ!<br>Самое страшное —<br>я лягу под пули!<br>Я унесу ветром закат,<br>если надо.<br>Я просто такой!<br>Не изменить:<br>ни рукой,<br>ни ногой,<br>ни словом,<br>ни головой —<br>я такой!<br>Я лёг под пули<br>и умер.<br>Звезда героя — жене<br>и надгробный камень.<br>Ну умер и умер!<br><br>На полочке<br>в прихожей<br>лежу.<br>И кто б увидел —<br>не поверил,<br>а это так!<br>Её охраняю<br>и просто люблю...<br>А у неё всё наперекосяк!<br>И зачем?<br>Так надо!<br>Кому?<br>Ей!<br>Вселенной надо моей!
+                .collapse-panel__more._hidden.js-collapse-more-box
+                  button.collapse-panel__more-link._dashed.js-collapse-more-button Читать полностью
+            .item-page__box._thumbnails
+              .thumbnails
+                .thumbnails__slider.js-slider(data-slider-for='.cover__slider' data-slider-type='thumbnails')
+                  each thumbnails in new Array(3)
+                    .thumbnails__slide.js-slider-slide: .thumbnails__slide-box
+                      img.thumbnails__img(src='http://via.placeholder.com/50x50/')
+            .item-page__box
+              +button._big._add Добавить в корзину

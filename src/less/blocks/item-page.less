@@ -1,0 +1,90 @@
+.item-page {
+  &__conteiner {
+    padding: 0 10px 20px;
+
+    @media @mobile {
+      display: flex;
+      align-items: flex-start;
+      justify-content: stretch;
+      padding: 20px 15px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 10px;
+
+    @media @mobile {
+      width: 350px;
+      margin: 0 20px 0 0;
+    }
+  }
+
+  &__name {
+    display: block;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  &__box {
+    margin-top: 15px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &._thumbnails {
+      display: none;
+
+      @media @mobile {
+        display: block;
+      }
+    }
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    margin: 10px 0 0;
+    display: flex;
+  }
+
+  &__price + &__price {
+    margin-top: 0;
+  }
+
+  &__price-percent {
+    margin-left: 6px;
+  }
+
+  &__char {
+    display: flex;
+    line-height: 17px;
+    font-size: 13px;
+    color: #939393;
+    margin-top: 3px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__char-value {
+    margin-left: 5px;
+    font-weight: 500;
+  }
+
+  &__about {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+
+
+  // old price mod
+  &__price._old &__price-text {
+    text-decoration: line-through;
+    color: #787878;
+    font-weight: 400;
+  }
+}
