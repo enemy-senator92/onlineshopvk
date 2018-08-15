@@ -1,0 +1,99 @@
+.radio {
+  &__label {
+    .fonts;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__control {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -999px;
+  }
+
+  &__wrapp {
+    display: flex;
+    align-items: baseline;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px 10px 5px;
+
+    @media @mobile {
+      font-size: 14px;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+    }
+  }
+
+  &__control:checked ~ &__wrapp {
+    border-color: transparent;
+    background-color: #dee5eb;
+
+    @media @mobile {
+      background-color: transparent;
+    }
+  }
+
+  &__icon {
+    flex: 0 0 14px;
+    height: 14px;
+    background: #ffffff;
+    border: 1px solid #c3cad2;
+    margin-right: 8px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: @A background;
+
+    @media @mobile {
+      display: flex;
+    }
+  }
+
+  &__label:hover &__icon {
+    background-color: #ebedf2;
+  }
+
+  &__icon-circle {
+    opacity: 0;
+    width: 6px;
+    height: 6px;
+    background: #6786AB;
+    border-radius: 50%;
+    display: inline-block;
+    transition: @A opacity;
+  }
+
+  &__control:checked ~ &__wrapp &__icon-circle {
+    opacity: 1;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    display: block;
+    color: #888888;
+    font-weight: 400;
+
+    @media @mobile {
+      font-size: 12.5px;
+      color: #828282;
+    }
+  }
+
+  &__vkpay {
+    flex: 0 0 40px;
+    width: 40px;
+    margin-left: 7px;
+  }
+}

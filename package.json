@@ -49,6 +49,8 @@
   },
   "dependencies": {
     "jquery": "^3.3.1",
+    "jquery-modal": "^0.9.1",
+    "jquery.formstyler": "^1.7.5-repackage",
     "slick-carousel": "^1.8.1"
   }
 }

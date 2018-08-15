@@ -1,0 +1,19 @@
+extends /includes/layout
+
+include /mixins/checkout-cart
+include /mixins/checkout-order
+
+block variables
+  - const title = 'Страница оформления заказа'
+
+block main
+
+  main.main
+    .main__catalog
+      .checkout
+        .checkout__container
+          .checkout__cart: +checkout-cart
+          .checkout__order: +checkout-order
+          .checkout__buttons
+            .checkout__button: +button._big Оформить заказ
+            .checkout__oferta: a.checkout__oferta-link(href=$.jsv target='_blank') Нажимая на кнопку, я соглашаюсь с условиями публичной оферты.

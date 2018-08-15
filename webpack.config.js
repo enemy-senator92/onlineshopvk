@@ -31,7 +31,9 @@ const config = {
     alias: {
       Img: src.img,
       Font: src.font,
-      Js: src.js
+      Js: src.js,
+      $: path.resolve('node_modules','jquery/dist/jquery.min'),
+      jquery: path.resolve('node_modules','jquery/dist/jquery.min')
     },
 
     extensions: ['.js', '.json']

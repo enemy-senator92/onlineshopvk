@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="2px" viewBox="0 0 12 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>add_24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="6" y="11" width="12" height="2" rx="1"></rect>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-3964.000000, -428.000000)">
+        <g id="base" transform="translate(3250.000000, 100.000000)">
+            <g id="item" transform="translate(510.000000, 164.000000)">
+                <g id="Button/Light/Normal" transform="translate(195.000000, 150.000000)">
+                    <g id="Button/Normal">
+                        <g id="Button/Pressed-Copy-2">
+                            <g id="add_24" transform="translate(3.000000, 3.000000)">
+                                <rect id="Bounds" opacity="0.100000001" x="0" y="0" width="24" height="24"></rect>
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#B7C4D1" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

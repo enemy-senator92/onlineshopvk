@@ -1,0 +1,13 @@
+include /mixins/icon
+
+mixin modal(_data)
+  - const data = _data || {}
+  - const modalTitle = data.modalTitle || ''
+
+  .modal(id=data.modalId class=data.mods)&attributes(attributes)
+    button.modal__close.js-modal-close(rel='modal:close') Закрыть
+    .modal__container
+      if modalTitle !== ''
+        p.modal__title=modalTitle
+      .modal__body
+        block

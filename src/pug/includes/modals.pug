@@ -1,0 +1,8 @@
+include /mixins/modal
+include /mixins/delivery
+
+.page__modals
+  +modal({
+    modalId: 'delivery'
+  }): +delivery
+

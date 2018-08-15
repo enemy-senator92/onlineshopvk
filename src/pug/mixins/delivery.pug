@@ -1,0 +1,29 @@
+mixin delivery
+  .delivery-modal
+    .delivery-modal__container
+      .delivery-modal__body
+        h3.delivery-modal__title Выбор пункта выдачи товара
+        .delivery-modal__one
+          p.delivery-modal__one-title Фильтры
+          .delivery-modal__filter
+            each item in new Array(3)
+              .delivery-modal__item
+                label.delivery-modal__label
+                  input.delivery-modal__control(type='checkbox')
+                  span.delivery-modal__text BoxBerry
+              .delivery-modal__item
+                label.delivery-modal__label
+                  input.delivery-modal__control(type='checkbox')
+                  span.delivery-modal__text Hermes
+              .delivery-modal__item
+                label.delivery-modal__label
+                  input.delivery-modal__control(type='checkbox')
+                  span.delivery-modal__text IML
+        .delivery-modal__one
+          p.delivery-modal__one-title Метро
+          .delivery-modal__select: .input
+            .input__container
+              select.input__select.js-formstyler
+                option.sdfs Метро
+                option Ещё метро
+      .delivery-modal__map: .map#map тут карта

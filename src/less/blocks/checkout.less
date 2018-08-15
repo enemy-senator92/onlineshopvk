@@ -1,0 +1,52 @@
+.checkout {
+  &__container {
+    @media @mobile {
+      display: flex;
+      align-items: stretch;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__cart {
+    padding: 0 10px;
+
+    @media @mobile {
+      flex-grow: 1;
+      width: 509px;
+      padding: 0 20px 0 19px;
+    }
+  }
+
+  &__order {
+    @media @mobile {
+      flex-grow: 1;
+      width: 491px;
+      border-right: 1px solid #e7e8ec;
+      padding: 0 20px;
+    }
+  }
+
+  &__buttons {
+    display: block;
+
+    @media @mobile {
+      display: none;
+    }
+  }
+
+  &__button {
+    margin: 20px 10px 0;
+  }
+
+  &__oferta {
+    padding: 12px 10px;
+    text-align: center;
+  }
+
+  &__oferta-link {
+    font-size: 12.5px;
+    color: #828282;
+    text-align: left;
+    display: inline-block;
+  }
+}

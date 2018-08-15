@@ -1,0 +1,121 @@
+.jq-selectbox {
+	vertical-align: middle;
+  cursor: pointer;
+  width: 100%;
+
+  &__select {
+    .fonts;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #242424;
+    padding: 0 30px 0 10px;
+    border: 1px solid #d3d9de;
+    outline: none;
+    appearance: none;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__select-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  &__trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+
+    &-arrow {
+      background: url('../../img/chevron.svg') no-repeat center center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      transition: all 0.4s ease;
+
+      .opened & {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+  }
+
+  &__dropdown {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+
+  &__search {
+    display: none;
+  }
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    max-height: 230px;
+  }
+
+  & li {
+    .fonts;
+    min-height: 36px;
+    padding: 8px 17px;
+    user-select: none;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #363636;
+
+    &.selected {
+      background-color: #f2f3f7;
+      color: #495c91;
+    }
+
+    &:hover {
+      background-color: #f2f3f7;
+    }
+
+    &.disabled {
+      color: #aaaaaa;
+
+      &:hover {
+        background: none;
+      }
+    }
+
+    &.optgroup {
+      font-weight: bold;
+
+      &:hover {
+        background: none;
+        color: #231f20;
+        cursor: default;
+      }
+    }
+
+    &.option {
+      padding-left: 25px;
+    }
+  }
+}

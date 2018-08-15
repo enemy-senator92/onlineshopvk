@@ -1,0 +1,40 @@
+include /mixins/icon
+include /mixins/button
+
+mixin checkout-cart
+  .checkout-cart
+    .checkout-cart__container
+      h3.checkout-cart__title Корзина
+      .checkout-cart__list
+        each item in new Array(3)
+          .checkout-cart__item
+            .cart-item
+              .cart-item__container
+                .cart-item__images
+                  a.cart-item__pic(href=$.jsv)
+                    img.cart-item__img(src='http://via.placeholder.com/180x270/' alt='')
+                  button.cart-item__del(type='button'): +icon('close').cart-item__del-icon(width=12 height=12)
+                .cart-item__body
+                  p.cart-item__name
+                    a.cart-item__name-link(href=$.jsv) #Зановородиться. Невероятная история любви
+                  .cart-item__price-box
+                    p.cart-item__price
+                      span.cart-item__price-text 99 999 руб
+                    p.cart-item__price._old
+                      span.cart-item__price-text 99 999 руб
+                      span.cart-item__price-percent 30%
+                  .cart-item__buttons
+                    .counter.js-counter(data-counter=1)
+                      .counter__container
+                        button.counter__button._minus.js-counter-button(data-counter-type='minus' disabled): +icon('minus').cart-item__del-icon(width=12 height=12)
+                        button.counter__button._plus.js-counter-button(data-counter-type='plus'): +icon('plus').cart-item__del-icon(width=12 height=12)
+                        span.counter__cnt #[span.js-counter-cnt 1] шт.
+      .checkout-cart__total
+        span.checkout-cart__total-text Доставка:
+        span.checkout-cart__total-value 0 руб
+      .checkout-cart__total
+        span.checkout-cart__total-text Итого:
+        span.checkout-cart__total-value 21 066 руб
+      .checkout-cart__buttons
+        .checkout-cart__button: +button._big Оформить заказ
+        .checkout-cart__oferta: a.checkout-cart__oferta-link(href=$.jsv target='_blank') Нажимая на кнопку, я соглашаюсь с условиями публичной оферты.

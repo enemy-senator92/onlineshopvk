@@ -1,0 +1,129 @@
+mixin checkout-order
+  .checkout-order.js-order
+    .checkout-order__container
+      .checkout-order__form
+        h3.checkout-order__title Оформление заказа
+        .checkout-order__input: .input
+          .input__container
+            label.input__label Ваши имя и фамилия
+            input.input__control(type='text' placeholder='Укажите ваши имя и фамилию' value='')
+            p.input__error Поле обязательно для заполнения
+        .checkout-order__input: .input
+          .input__container
+            label.input__label Email
+            input.input__control(type='text' placeholder='Укажите Email' value='')
+        .checkout-order__input: .input
+          .input__container
+            label.input__label Телефон
+            input.input__control(type='text' placeholder='Укажите телефон' value='')
+        .checkout-order__input: .input
+          .input__container
+            label.input__label Город
+            input.input__control(type='text' placeholder='Укажите город' value='')
+      .checkout-order__form
+        h3.checkout-order__title Доставка
+        .checkout-order__input._radio: .radio
+          label.radio__label
+            input.radio__control.js-order-radio-control(type='radio' name='shipping' data-modal='#delivery')
+            .radio__wrapp
+              span.radio__icon: span.radio__icon-circle
+              span.radio__body
+                span.radio__title Доставка до пункта выдачи · бесплатно
+                span.radio__text 1 рабочий день. 863 пункта выдачи
+        .checkout-order__input._radio.js-order-radio-box
+          .radio
+            label.radio__label
+              input.radio__control.js-order-radio-control(type='radio' name='shipping')
+              .radio__wrapp
+                span.radio__icon: span.radio__icon-circle
+                span.radio__body
+                  span.radio__title Курьерская доставка IML · бесплатно
+                  span.radio__text 1 рабочий день. Примерка. Частичный выкуп.
+          .checkout-order__input-row._hidden
+            .checkout-order__input._half
+              .input
+                .input__container
+                  label.input__label Выбор даты
+                  select.input__select.js-formstyler
+                    option Завтра: 16-08-2018 (чт)
+                    option Завтра: 16-08-2018 (чт)
+            .checkout-order__input._half
+              .input
+                .input__container
+                  label.input__label Выбор времени
+                  select.input__select.js-formstyler
+                    option 21:00-21:30
+                    option 21:00-21:30
+        .checkout-order__input._radio.js-order-radio-box
+          .radio
+            label.radio__label
+              input.radio__control.js-order-radio-control(type='radio' name='shipping')
+              .radio__wrapp
+                span.radio__icon: span.radio__icon-circle
+                span.radio__body
+                  span.radio__title Срочная курьерская доставка · бесплатно
+                  span.radio__text Завтра. Срочная доставка предоплаченных заказов
+          .checkout-order__input-row._hidden
+            .checkout-order__input._half
+              .input
+                .input__container
+                  label.input__label Выбор даты
+                  select.input__select.js-formstyler
+                    option Завтра: 16-08-2018 (чт)
+                    option Завтра: 16-08-2018 (чт)
+            .checkout-order__input._half
+              .input
+                .input__container
+                  label.input__label Выбор времени
+                  select.input__select.js-formstyler
+                    option 21:00-21:30
+                    option 21:00-21:30
+        .checkout-order__input._radio: .radio
+          label.radio__label
+            input.radio__control(type='radio' name='shipping')
+            .radio__wrapp
+              span.radio__icon: span.radio__icon-circle
+              span.radio__body
+                span.radio__title Курьерская доставка DPD · 510 руб
+                span.radio__text 3 рабочих дня. Заказ будет доставлен курьером. Оплата возможна при получении.
+        .checkout-order__input-row
+          .checkout-order__input
+            .input
+              .input__container
+                label.input__label Адрес доставки
+                input.input__control(type='text' placeholder='Укажите адрес' value='')
+          .checkout-order__input._small
+            .input
+              .input__container
+                label.input__label Квартира/офис
+                input.input__control(type='text' placeholder='...' value='')
+      .checkout-order__form
+        h3.checkout-order__title Способ оплаты
+        .checkout-order__input._radio: .radio
+          label.radio__label
+            input.radio__control(type='radio' name='paymentAll')
+            .radio__wrapp
+              span.radio__icon: span.radio__icon-circle
+              span.radio__body
+                span.radio__title Онлайн оплата · #[img.radio__vkpay(src='img/vkpay_logo.png' alt='')]
+                span.radio__text При оплате через VK Pay Вы получите 10% кешбэка с 1й покупки и 5% с последующих покупок
+        .checkout-order__input._radio: .radio
+          label.radio__label
+            input.radio__control(type='radio' name='paymentAll')
+            .radio__wrapp
+              span.radio__icon: span.radio__icon-circle
+              span.radio__body
+                span.radio__title Онлайн оплата
+                span.radio__text Оплата онлайн картами Visa, Mastercard
+        .checkout-order__input._radio: .radio
+          label.radio__label
+            input.radio__control(type='radio' name='paymentAll')
+            .radio__wrapp
+              span.radio__icon: span.radio__icon-circle
+              span.radio__body
+                span.radio__title При получении
+                span.radio__text Оплата наличными (или картой) при получении
+        .checkout-order__input: .input
+          .input__container
+            label.input__label Комментарии к заказу
+            input.input__control(type='text' placeholder='Ваш комментарий' value='')

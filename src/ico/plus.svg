@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>add_24</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.000006,11 L17.5,11 C17.7761424,11 18,11.2238576 18,11.5 L18,12.5 C18,12.7761424 17.7761424,13 17.5,13 L13.000006,13 L13.000006,17.4999286 C13.000006,17.776071 12.7761484,17.9999286 12.500006,17.9999286 L11.5,17.9999286 C11.2238576,17.9999286 11,17.776071 11,17.4999286 L11,13 L6.5,13 C6.22385763,13 6,12.7761424 6,12.5 L6,11.5 C6,11.2238576 6.22385763,11 6.5,11 L11,11 L11,6.5 C11,6.22385763 11.2238576,6 11.5,6 L12.500006,6 C12.7761484,6 13.000006,6.22385763 13.000006,6.5 L13.000006,11 Z" id="path-1"></path>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-3999.000000, -423.000000)">
+        <g id="base" transform="translate(3250.000000, 100.000000)">
+            <g id="item" transform="translate(510.000000, 164.000000)">
+                <g id="Button/Light/Normal" transform="translate(230.000000, 150.000000)">
+                    <g id="Button/Normal">
+                        <g id="Button/Pressed-Copy-2">
+                            <g id="add_24" transform="translate(3.000000, 3.000000)">
+                                <rect id="Bounds" opacity="0.100000001" x="0" y="0" width="24" height="24"></rect>
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#B7C4D1" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

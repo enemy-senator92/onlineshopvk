@@ -3361,6 +3361,20 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+jquery-modal@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/jquery-modal/-/jquery-modal-0.9.1.tgz#f22f13f0efa5ea3f2afaeb7981c1e20114c9d2f2"
+
+jquery.formstyler@^1.7.5-repackage:
+  version "1.7.5-repackage"
+  resolved "https://registry.yarnpkg.com/jquery.formstyler/-/jquery.formstyler-1.7.5-repackage.tgz#b0362c6a6a771de4fe764da8e1b50b9a759b5dc9"
+  dependencies:
+    jquery "^2.1.4"
+
+jquery@^2.1.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
+
 jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
