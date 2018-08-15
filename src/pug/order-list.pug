@@ -1,0 +1,29 @@
+extends /includes/layout
+
+include /mixins/button
+
+block variables
+  - const title = 'Список заказов'
+
+block main
+
+  main.main
+    .main__catalog
+      .order-list
+        .order-list__container
+          table.order-list__table
+            thead.order-list__thead
+              tr.order-list__line
+                th.order-list__col № Заказа
+                th.order-list__col Дата заказа
+                th.order-list__col._hidden Доставка
+                th.order-list__col Статус
+                th.order-list__col._hidden Сумма заказа
+            tbody.order-list__tbody
+              each item in new Array(5)
+                tr.order-list__line(onclick)
+                  td.order-list__col 793717
+                  td.order-list__col 16.08.2018
+                  td.order-list__col._hidden Курьерская доставка IM-Logistics
+                  td.order-list__col Ожидает подтверждения
+                  td.order-list__col._hidden 21 066 руб
