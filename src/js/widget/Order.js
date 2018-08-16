@@ -11,8 +11,8 @@ export default class {
 
         Modal.open($modal);
 
-        $modal.find('.js-modal-close').on('click', (e) => {
-          e.preventDefault();
+        $modal.find('.js-modal-close').on('click', (event) => {
+          event.preventDefault();
           Modal.close();
         });
       }

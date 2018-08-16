@@ -51,7 +51,7 @@ export default class {
   }
 
   closeBody() {
-    $(document).on('click', (e) => {
+    $('body, html').on('click', (e) => {
       if (!this.$moreList.hasClass('_hidden')) {
         // если клик был не по нашему блоку и не по его дочерним элементам
         if (!this.$c.is(e.target) && this.$c.has(e.target).length === 0) {

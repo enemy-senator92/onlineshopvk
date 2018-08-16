@@ -4,7 +4,7 @@ export default class Modal {
     this.$close = this.$modal.find('.js-modal-close');
     this.type = $c.data('modal-type') || 'button';
 
-    $c.on('click', (e) => {
+    $c.on('click', () => {
       Modal.open(this.$modal);
     });
 

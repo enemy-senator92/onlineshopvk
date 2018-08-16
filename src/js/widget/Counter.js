@@ -1,7 +1,6 @@
 export default class {
   constructor($c) {
     const $control = $c.find('.js-counter-cnt');
-    let oldValue = +$control.data('counter');
     const max = 999;
 
     $c.on('click', '.js-counter-button', (e) => {
@@ -15,7 +14,6 @@ export default class {
         case 'minus':
           value = value <= 1 ? 1 : value - 1;
           if (value <= 1) {
-            console.log('minus'+value);
             $(e.currentTarget).attr('disabled', true);
           }
           $control.html(value);
@@ -25,8 +23,6 @@ export default class {
           $control.html(max < value ? max : value);
           break;
       }
-
-      oldValue = value;
     });
   }
 }
