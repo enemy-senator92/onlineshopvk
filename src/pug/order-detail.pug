@@ -9,3 +9,84 @@ block main
 
   main.main
     .main__container
+      .order-detail
+        .order-detail__container
+          .order-detail__heading
+            h3.order-detail__title Заказ №793717 (16.08.2018)
+            p.order-detail__holder Статус: Отменен
+          .order-detail__body
+            .order-detail__main-info
+              .order-detail__row
+                .order-detail__col
+                  .order-detail__info-title Кому
+                  dl.order-detail__one
+                    dt.order-detail__text ФИО:
+                    dd.order-detail__value Максим Донсков
+                  dl.order-detail__one
+                    dt.order-detail__text Телефон:
+                    dd.order-detail__value 79150869121
+                .order-detail__col
+                  .order-detail__info-title Оплата
+                  dl.order-detail__one
+                    dt.order-detail__text Способ оплаты:
+                    dd.order-detail__value Оплата наличными (или картой) при получении
+                  dl.order-detail__one
+                    dt.order-detail__text Общая сумма:
+                    dd.order-detail__value 21 066 руб
+              .order-detail__row
+                .order-detail__col
+                  .order-detail__info-title Доставка
+                  .order-detail__one
+                    p.order-detail__value Курьерская доставка IM-Logistics
+                  .order-detail__one
+                    p.order-detail__value Максим Донсков<br>127282, Москва, Москва<br>Ул Тихомирова, д. 5, кв. 111
+            .order-detail__state
+              .order-detail__info-title Состояние заказа
+              .order-detail__table
+                .order-list._order-data
+                  .order-list__container
+                    table.order-list__table
+                      thead.order-list__thead
+                        tr.order-list__line
+                          th.order-list__col Статус
+                          th.order-list__col Дата
+                      tbody.order-list__tbody
+                        each item in new Array(5)
+                          tr.order-list__line
+                            td.order-list__col
+                              .order-info
+                                p.order-info__title Сообщение
+                                p.order-info__type Магазин
+                                p.order-info__comment Ваш заказ отменен, так как Вы передумали. Будем рады видеть Вас вновь на 5karmanov.
+                            td.order-list__col 16.08.2018 17:54:24
+            .order-detail__products
+              .order-detail__info-title Товары в заказе
+                .order-detail__table
+                  .order-list._order-data._products
+                    .order-list__container
+                      table.order-list__table
+                        thead.order-list__thead
+                          tr.order-list__line
+                            th.order-list__col Артикул
+                            th.order-list__col Кол-во
+                            th.order-list__col Сумма
+                        tbody.order-list__tbody
+                          each item in new Array(5)
+                            tr.order-list__line
+                              td.order-list__col
+                                .order-product
+                                  .order-product__container
+                                    .order-product__pic
+                                      a.order-product__pic-link
+                                        img.order-product__img(src='http://via.placeholder.com/50x80/' alt='')
+                                    .order-product__body
+                                      .order-info._item
+                                        p.order-info__title: a.order-info__title-link(href=$.jsv) #Зановородиться. Невероятная история любви
+                                        p.order-info__type Артикул №1210323
+                              td.order-list__col(width='100px') 2
+                              td.order-list__col(width='150px') 21 066 руб
+                          tr.order-list__line
+                            td.order-list__col(colspan=2)
+                              .order-info
+                                p.order-info__title Стоимость товаров:
+                            td.order-list__col 21 066 руб

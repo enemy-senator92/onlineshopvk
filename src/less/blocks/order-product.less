@@ -1,0 +1,29 @@
+.order-product {
+  &__container {
+    @media @mobile {
+      display: flex;
+    }
+  }
+
+  &__pic {
+    display: none;
+
+    @media @mobile {
+      display: inline-flex;
+      flex: 0 0 50px;
+      margin-right: 15px;
+    }
+  }
+
+  &__pic-link {
+    .a-reset;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__body {
+    flex: auto;
+  }
+}

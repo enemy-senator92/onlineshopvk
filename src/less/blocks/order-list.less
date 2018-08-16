@@ -21,6 +21,7 @@
 
   &__thead {
     background: #f2f2f1;
+    white-space: nowrap;
   }
 
   &__thead &__line {
@@ -96,6 +97,41 @@
 
     @media @mobile {
       height: 42px;
+    }
+  }
+
+
+
+  // order-data mod
+  &._order-data &__tbody {
+    td {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      &:first-child {
+        width: 70%;
+      }
+    }
+  }
+
+  &._order-data &__tbody &__line {
+    cursor: default;
+  }
+
+  &._order-data &__container {
+    padding: 0;
+  }
+
+
+
+  // products mod
+  &._products &__thead {
+    th {
+      width: auto;
+
+      &:nth-child(2) {
+        width: 130px;
+      }
     }
   }
 }
