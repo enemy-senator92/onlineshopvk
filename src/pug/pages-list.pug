@@ -32,6 +32,6 @@ block main
             ul.pages-list
               each page in group.list
                 li
-                  a(href=page.href): nobr=page.content
+                  a(href=page.href target='_blank'): nobr=page.content
                   =' - '
                   nobr=page.href
