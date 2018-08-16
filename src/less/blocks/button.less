@@ -1,4 +1,6 @@
 .button {
+  .button-reset;
+  .a-reset;
   .fonts;
   padding: 7px 16px 8px;
   margin: 0;
@@ -27,6 +29,7 @@
     width: 100%;
     font-size: 13px;
     letter-spacing: 0.1px;
+    font-weight: 500;
   }
 
   &._big {
@@ -52,6 +55,17 @@
       line-height: 16px;
       height: auto;
       padding: 11px 13px 12px;
+    }
+  }
+
+  &._light {
+    background-color: #e5ebf1;
+    color: #55677d;
+    letter-spacing: .16px;
+
+    &:hover {
+      text-decoration: none;
+      background-color: #dfe6ed;
     }
   }
 }
