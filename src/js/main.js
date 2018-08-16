@@ -13,6 +13,8 @@ import FormStyler from 'Js/widget/FormStyler';
 import Counter from 'Js/widget/Counter';
 import Order from 'Js/widget/Order';
 import Modal from 'Js/widget/Modal';
+import More from 'Js/widget/More';
+import MoreMobile from 'Js/widget/MoreMobile';
 
 $(() => {
   init('.js-menu', Menu, 'widget', 'Menu');
@@ -24,4 +26,6 @@ $(() => {
   init('.js-counter', Counter, 'widget', 'Counter');
   init('.js-order', Order, 'widget', 'Order');
   init('.js-modal', Modal, 'widget', 'Modal');
+  init('.js-more', More, 'widget', 'More');
+  init('.js-more-mobile', MoreMobile, 'widget', 'MoreMobile');
 });

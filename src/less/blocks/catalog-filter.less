@@ -1,0 +1,55 @@
+.catalog-filter {
+  &__row {
+    @media @mobile {
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 0 -10px;
+    }
+  }
+
+  &__col {
+    margin-bottom: 10px;
+
+    @media @mobile {
+      flex: 1 1 25%;
+      padding: 0 10px;
+      margin: 0;
+    }
+  }
+
+  &__btn-mobile {
+    .buttons;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    @media @mobile {
+      display: none;
+    }
+  }
+
+  &__btn-mobile-icon {
+    margin: 0 3px 0 0;
+    width: 20px;
+    height: 20px;
+    background: url('../../img/edit_newsfeed.png') no-repeat 3px -12px;
+    opacity: 0.85;
+  }
+
+  &__list {
+    display: none;
+
+    @media @mobile {
+      display: block;
+    }
+  }
+
+
+
+  // active mod
+  &._active &__list {
+    display: block;
+  }
+}

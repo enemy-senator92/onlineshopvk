@@ -3,6 +3,7 @@
     {
       "list": [
         { "href": "main.html", "content": "Главная страница" },
+        { "href": "catalog.html", "content": "Каталог" },
         { "href": "item.html", "content": "Страница товара" },
         { "href": "cart.html", "content": "Страница оформления заказа" },
         { "href": "order-list.html", "content": "Список заказов" },

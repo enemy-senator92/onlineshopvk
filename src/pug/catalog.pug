@@ -1,0 +1,32 @@
+extends /includes/layout
+
+include /mixins/button
+include /mixins/catalog-filter
+
+block variables
+  - const title = 'Каталог'
+
+block main
+
+  main.main
+    .main__container
+      .catalog
+        .catalog__heading
+
+        .catalog__filter: +catalog-filter
+        .catalog__list.js-catalog-list
+          each item in new Array(20)
+            .catalog__item.js-catalog-item
+              .product-card.js-catalog-card
+                .product-card__content
+                  .product-card__images
+                    a.product-card__images-link(href=$.jsv)
+                      img.product-card__img(src='http://via.placeholder.com/400x600/' alt='')
+                  .product-card__body
+                    a.product-card__name(href=$.jsv) Выйди из зоны комфорта. Измени свою жизнь и стань гер
+                    p.product-card__price: span.product-card__price-text 99 999 руб
+                    p.product-card__price._old
+                      span.product-card__price-text 99 999 руб
+                      span.product-card__price-percent 30%
+                    .product-card__more: +button._medium Подробнее
+          .clearfix
