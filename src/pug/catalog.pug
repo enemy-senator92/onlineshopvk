@@ -2,6 +2,7 @@ extends /includes/layout
 
 include /mixins/button
 include /mixins/catalog-filter
+include /mixins/catalog-heading
 
 block variables
   - const title = 'Каталог'
@@ -11,8 +12,7 @@ block main
   main.main
     .main__container
       .catalog
-        .catalog__heading
-
+        .catalog__heading: +catalog-heading
         .catalog__filter: +catalog-filter
         .catalog__list.js-catalog-list
           each item in new Array(20)
@@ -30,3 +30,4 @@ block main
                       span.product-card__price-percent 30%
                     .product-card__more: +button._medium Подробнее
           .clearfix
+        .catalog__button: +button._big Показать ещё

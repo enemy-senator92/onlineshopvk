@@ -1,0 +1,38 @@
+.catalog-heading {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__cnt {
+    padding-right: 20px;
+    font-size: 14px;
+
+    @media @mobile {
+      font-size: 13px;
+    }
+  }
+
+  &__sort {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: auto;
+  }
+
+  &__sort-title {
+    display: none;
+    margin-right: 6px;
+    font-size: 14px;
+
+    @media @mobile {
+      display: inline-flex;
+      font-size: 13px;
+    }
+  }
+
+  &__sort-select {
+    min-width: 180px;
+  }
+}

@@ -1,5 +1,7 @@
 export default class {
   constructor($c) {
-    $c.styler();
+    $c.styler({
+      selectSmartPositioning: false
+    });
   }
 }
